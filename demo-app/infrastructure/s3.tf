@@ -38,3 +38,7 @@ data "aws_iam_policy_document" "allow_public_access" {
     ]
   }
 }
+
+resource "aws_s3_bucket" "main_module_bucket" {
+  bucket = "bennyh-main-module-bucket"
+}
